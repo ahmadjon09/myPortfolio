@@ -1,0 +1,272 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1444px;
+  margin: auto;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+/* A hover */
+
+.link {
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right,
+      #ffbd39,
+      #ffbd39 50%,
+      #fff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-weight: 999;
+}
+
+.link:before {
+  content: '';
+  background: #ffbd39;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-position: 0;
+  transform: translateY(5px);
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+.textt {
+  text-shadow: 0 15px 3px rgb(59, 59, 59);
+  font-weight: 999;
+  letter-spacing: 1px;
+}
+
+/* my skills */
+.myskillP1 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill1 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill1 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 45%;
+  }
+}
+
+.myskillP2 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill2 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill2 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 95%;
+  }
+}
+
+.myskillP3 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill3 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill3 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 68%;
+  }
+}
+
+.myskillP4 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill4 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill4 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 71%;
+  }
+}
+
+.myskillP5 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill5 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill5 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 69%;
+  }
+}
+
+.myskillP6 {
+  width: 1px;
+  background: #ffbd39;
+  animation: myskill6 1.5s forwards;
+  border-radius: 3px;
+}
+
+@keyframes myskill6 {
+  from {
+    width: 1px;
+  }
+
+  to {
+    width: 60%;
+  }
+}
+
+input,
+textarea {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 950px) {
+  .pxx {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #show {
+    left: 0;
+  }
+
+  .navv {
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background: #1a1a1a;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+  }
+
+  .n {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .fji {
+    flex-direction: column;
+    height: auto;
+    margin: 20px 0;
+    gap: 30px;
+  }
+
+  .gppp {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .ij {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ij>div {
+    width: 100%;
+  }
+
+  .frr {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .frr>div {
+    text-align: center;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .me {
+    display: none;
+  }
+
+  .textt {
+    font-size: 50px;
+  }
+
+  .pp {
+    font-size: 45px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .headerp {
+    font-size: 20px;
+  }
+}
